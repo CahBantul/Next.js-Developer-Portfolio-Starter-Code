@@ -1,4 +1,13 @@
+# Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.2.8](https://github.com/CahBantul/Next.js-Developer-Portfolio-Starter-Code/compare/v1.2.7...v1.2.8) (2023-04-10)
+
+
+### Bug Fixes
+
+* **fix:** add release.md ([f1803db](https://github.com/CahBantul/Next.js-Developer-Portfolio-Starter-Code/commit/f1803dbac6f9ad5ecd1725b613e228d4a407f723))
 
 ## [1.2.7](https://github.com/CahBantul/Next.js-Developer-Portfolio-Starter-Code/compare/v1.2.6...v1.2.7) (2023-04-10)
 
