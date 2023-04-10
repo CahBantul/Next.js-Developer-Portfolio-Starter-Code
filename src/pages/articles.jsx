@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React from 'react';
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 
-const FeaturedProject = ({type, title, summary, image, link, githubLink}) => {
+const FeaturedArticles = ({type, title, summary, image, link, githubLink}) => {
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
       <div className="absolute top-0 -right-3 -z-10 bg-dark rounded-[2.5rem] w-[101%] h-[103%] rounded-br-3xl" />
@@ -46,7 +46,7 @@ const FeaturedProject = ({type, title, summary, image, link, githubLink}) => {
   );
 };
 
-const Project = ({title, image, githubLink, type, link}) => {
+const Article = ({title, image, githubLink, type, link}) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
       <div className="absolute top-0 -right-3 -z-10 bg-dark rounded-[2rem] w-[101%] h-[103%] rounded-br-3xl" />
@@ -85,19 +85,19 @@ const Project = ({title, image, githubLink, type, link}) => {
   );
 };
 
-const projects = () => {
+const articles = () => {
   return (
     <>
       <Head>
-        <title>Nozami | Projects Page</title>
+        <title>Nozami | Articles Page</title>
         <meta name="description" content="about nozami" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text={'Projects'} className="mb-16" />
+          <AnimatedText text={'Articles'} className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
-              <FeaturedProject
+              <FeaturedArticles
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
@@ -105,29 +105,29 @@ const projects = () => {
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
             <div className="col-span-6">
-              <Project
+              <Article
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
             <div className="col-span-6">
-              <Project
+              <Article
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
             <div className="col-span-12">
-              <FeaturedProject
+              <FeaturedArticles
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
@@ -135,25 +135,25 @@ local currency."
 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
 local currency."
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
             <div className="col-span-6">
-              <Project
+              <Article
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
             <div className="col-span-6">
-              <Project
+              <Article
                 title={'Crypto Screener Application'}
                 image={project1}
                 githubLink={'/'}
                 link={'/'}
-                type={'Featured Project'}
+                type={'Featured Article'}
               />
             </div>
           </div>
@@ -163,4 +163,4 @@ local currency."
   );
 };
 
-export default projects;
+export default articles;
