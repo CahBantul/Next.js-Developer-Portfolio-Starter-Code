@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/CahBantul/Next.js-Developer-Portfolio-Starter-Code/compare/v0.2.1...v0.3.0) (2023-04-10)
+
+
+### Bug Fixes
+
+* fix conflict package.json ([53b2e82](https://github.com/CahBantul/Next.js-Developer-Portfolio-Starter-Code/commit/53b2e82fd9c3cf5ef01fb284cded0bc9def76d84))
+
 ### 0.2.1 (2023-04-10)
 
 
