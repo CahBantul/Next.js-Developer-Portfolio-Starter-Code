@@ -41,12 +41,12 @@ const about = () => {
         <title>Nozami | About Page</title>
         <meta name="description" content="about nozami" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text={'Passion Fuels Purpose!'} className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium text-justify">
@@ -68,8 +68,8 @@ const about = () => {
                 opportunity to bring my skills and passion to your next project.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 bg-dark rounded-[2rem] w-[102%] h-[103%]" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
+              <div className="absolute top-0 -right-3 -z-10 bg-dark rounded-[2rem] w-[102%] h-[103%] dark:bg-light" />
               <Image
                 src={profilePic}
                 alt="nozami"
@@ -81,7 +81,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value="2" />+
                 </span>
-                <h2 className="capitalize text-dark/75 font-medium text-lg">
+                <h2 className="capitalize text-dark/75 font-medium text-lg dark:text-light/75">
                   years of experience
                 </h2>
               </div>
