@@ -16,8 +16,8 @@ const Details = ({type, issuedBy, issued}) => {
         transition={{duration: 0.5, type: 'spring'}}
       >
         <h3 className="capitalize font-bold text-2xl">{type}</h3>
-        <span className="capitalize font-medium text-dark">{issuedBy}</span>
-        <p className="capitalize font-medium text-dark/50">Issued {issued}</p>
+        <span className="capitalize font-medium text-dark dark:text-light">{issuedBy}</span>
+        <p className="capitalize font-medium text-dark/50 dark:text-light/50">Issued {issued}</p>
       </motion.div>
     </li>
   );
@@ -46,29 +46,9 @@ const Licenses = () => {
             issued={'March 2023'}
           />
           <Details
-            type={'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)'}
-            issuedBy={'Dicoding Indonesia'}
-            issued={'March 2023'}
-          />
-          <Details
             type={'Belajar Dasar-Dasar  Development and Operations (DevOps)'}
             issuedBy={'Dicoding Indonesia'}
             issued={'Dec 2022'}
-          />
-          <Details
-            type={'Belajar Jaringan Komputer untuk Pemula'}
-            issuedBy={'Dicoding Indonesia'}
-            issued={'Dec 2022'}
-          />
-          <Details
-            type={'Belajar Javascript (Basic)'}
-            issuedBy={'HackerRank'}
-            issued={'Aug 2022'}
-          />
-          <Details
-            type={'Belajar Dasar Pemrograman JavaScript'}
-            issuedBy={'Dicoding Indonesia'}
-            issued={'Jun 2022'}
           />
 
           <Details
@@ -86,21 +66,10 @@ const Licenses = () => {
             issuedBy={'Dicoding Indonesia'}
             issued={'Jun 2022'}
           />
-
-          <Details
-            type={'Belajar Prinsip Pemrograman SOLID'}
-            issuedBy={'Dicoding Indonesia'}
-            issued={'Jun 2021'}
-          />
           <Details
             type={'Belajar Fundamental Front-End Web Development'}
             issuedBy={'Dicoding Indonesia'}
             issued={'Oct 2020'}
-          />
-          <Details
-            type={'Belajar Dasar Pemrograman Web'}
-            issuedBy={'Dicoding Indonesia'}
-            issued={'May 2020'}
           />
         </ul>
       </div>
