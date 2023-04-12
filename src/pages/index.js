@@ -19,7 +19,12 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/3">
-              <Image src={profilePict} alt="nozami" className="w-full h-auto" />
+              <Image src={profilePict} alt="nozami" className="w-full h-auto" 
+                priority 
+               sizes="(max-width: 768px) 100vw,
+               (max-width: 1200px) 50vw,
+               50vw"
+              />
             </div>
             <div className="w-2/3 flex flex-col items-center self-center">
               <AnimatedText
