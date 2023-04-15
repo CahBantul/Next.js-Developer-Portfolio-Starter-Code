@@ -71,7 +71,7 @@ const Navbar = () => {
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -125,7 +125,7 @@ const Navbar = () => {
         <nav className='flex items-center justify-center flex-col'>
           <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
           <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
-          <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick} />
+          {/* <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick} /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
