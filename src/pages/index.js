@@ -18,12 +18,12 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+            <div className="w-1/3 md:w-full">
               <Image src={profilePict} alt="nozami" className="w-full h-auto lg:hidden md:inline-block md:w-full" 
                 priority 
                sizes="(max-width: 768px) 100vw,
                (max-width: 1200px) 50vw,
-               50vw"
+               30vw"
               />
             </div>
             <div className="w-2/3 flex flex-col items-center self-center lg:w-full lg:text-center">
