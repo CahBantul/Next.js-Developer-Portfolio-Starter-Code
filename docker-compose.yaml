@@ -22,7 +22,8 @@ services:
       - "80:80"
     volumes:
       - ./config:/etc/nginx/conf.d
-      - certbot-etc:/etc/letsencrypt
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /tmp/acme_challenge:/tmp/acme_challenge
     networks:
       - app-next
 
@@ -32,7 +33,7 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - "certbot-etc:/etc/letsencrypt"      
+      - "/etc/letsencrypt:/etc/letsencrypt"
       - "/tmp/acme_challenge:/tmp/acme_challenge"
     environment:
       - TERM=xterm
