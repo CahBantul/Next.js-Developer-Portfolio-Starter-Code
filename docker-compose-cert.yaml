@@ -1,12 +1,13 @@
 version: "3.3" 
 services:
-  letsencrypt:
-    container_name: 'certbot-service'
+  certbot:
+    depends_on:
+      - webserver
     image: certbot/certbot
-    command: sh -c "certbot certonly --webroot -w /tmp/acme_challenge -d test.karthickcse05demo.xyz --text --agree-tos --email karthickcse05@gmail.com --rsa-key-size 4096 --verbose --keep-until-expiring --preferred-challenges=http"
-    entrypoint: ""
+    container_name: certbot
     volumes:
       - "/etc/letsencrypt:/etc/letsencrypt"
       - "/tmp/acme_challenge:/tmp/acme_challenge"
     environment:
       - TERM=xterm
+    command: sh -c "certbot certonly --webroot -w /tmp/acme_challenge -d nozami.id --text --agree-tos --email nozami.id@gmail.com --rsa-key-size 4096 --verbose --keep-until-expiring --preferred-challenges=http"
