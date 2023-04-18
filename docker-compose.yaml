@@ -32,8 +32,11 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - certbot-etc:/etc/letsencrypt
-    command: certonly --webroot --webroot-path=/var/www/html --email nozami.id@gmail.com --agree-tos --no-eff-email --staging -d nozami.id -d www.nozami.id
+      - "certbot-etc:/etc/letsencrypt"      
+      - "/tmp/acme_challenge:/tmp/acme_challenge"
+    environment:
+      - TERM=xterm
+    command: sh -c "certbot certonly --webroot -w /tmp/acme_challenge -d nozami.id --text --agree-tos --email nozami.id@gmail.com --rsa-key-size 4096 --verbose --keep-until-expiring --preferred-challenges=http"
 
 volumes:
   certbot-etc:
