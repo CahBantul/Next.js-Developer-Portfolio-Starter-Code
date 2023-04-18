@@ -19,7 +19,8 @@ services:
     container_name: webserver
     restart: unless-stopped
     ports:
-      - "80:80"
+      - 80:80
+      - 443:443
     volumes:
       - ./config:/etc/nginx/conf.d
       - /etc/letsencrypt:/etc/letsencrypt:ro
